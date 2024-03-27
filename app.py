@@ -55,10 +55,6 @@ chain = RetrievalQA.from_chain_type(llm=llm,
 
 
 
-
-# @app.route('/', methods=["GET", "POST"])
-# def index():
-#     return render_template('chat.html', **locals())
 @app.route("/")
 def index():
     return render_template('chat.html')
@@ -72,18 +68,6 @@ def chat():
     print("Response : ", result["result"])
     return str(result["result"])
 
-
-# @app.route('/chatbot', methods=["GET", "POST"])
-# def chatbotResponse():
-
-#     if request.method == 'POST':
-#         user_input = request.form['question']
-#         print(user_input)
-
-#         result=chain({'query':user_input})
-#         print(f"Answer:{result['result']}")
-
-#     return jsonify({"response": str(result['result']) })
 
 
 
