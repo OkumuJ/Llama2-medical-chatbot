@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name = 'Healthcare services Chatbot',
+    name = 'Llama2 Medical Chatbot',
     version= '0.0.0',
     author= 'Okumu Joseph',
     author_email= 'jokumu63@yahoo.com',
